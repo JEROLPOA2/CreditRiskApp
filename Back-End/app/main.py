@@ -1,5 +1,7 @@
 # main.py
+import os
 from fastapi import FastAPI
+import uvicorn
 from app.controllers.loan_controller import LoanController
 from app.middlewares.cors_middleware import CORS
 
@@ -23,3 +25,4 @@ class App:
 
 app_instance = App()
 app = app_instance.get_app()
+
